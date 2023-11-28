@@ -36,11 +36,13 @@ export const Title = styled.h1`
   @media screen and (min-width: 768px) {
     font-size: 48px;
     margin-bottom: 0;
+    width: 290px;
 }
 
 @media screen and (min-width: 1280px) {
     font-size: 64px;
     margin-bottom: 0;
+    width: 485px;
 }
 `;
 
@@ -50,7 +52,12 @@ export const Text = styled.p`
     text-align: justify;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 0;
+    margin-bottom: 43px;
+    text-align: start;
+}
+
+    @media screen and (min-width: 1280px) {
+    margin-bottom: 20px;
     text-align: start;
 }
 `;
@@ -84,30 +91,29 @@ export const Wrapper = styled.div`
     justify-content: center;
     align-items: center;
     margin-bottom: 24px;
+    width: 100%;
 
     @media screen and (min-width: 768px) {
-       display: grid;
-       grid-template-columns: 300px 370px;
-       grid-gap: 0 65px;
-   
-    
-       & > :nth-of-type(1) {
-        grid-column-start: 1;  
-        grid-row: span 2;
-      }
-
-      & > :nth-of-type(3) {
-        grid-column-start: 2;
-        grid-row-start: 2;
-      }
-
-      @media screen and (min-width: 1280px) {
-        grid-template-columns: 485px 400px;
-        grid-gap: 0 200px;
-        
-      }
-    }   
+        flex-direction: row;
+        justify-content: space-between;
+      
+    }
 `;
+
+export const Cover = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    @media screen and (min-width: 768px) {
+    align-items: start;
+    width: 370px;
+}
+
+@media screen and (min-width: 1280px) {
+    width: 400px;
+}
+`
 
 export const AddressWrapper = styled.div`
     position: relative;

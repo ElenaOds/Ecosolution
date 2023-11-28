@@ -1,23 +1,18 @@
 import { ReactComponent as ArrowRight } from '../../assets/icons/arrow-right.svg';
-import { Container, Title, Text, StyledLink, Wrapper, AddressWrapper, Address, CopyRight, Img } from './Main.styed';
+import { Container, Title, Text, StyledLink, Wrapper, AddressWrapper, Address, CopyRight, Img, Cover } from './Main.styed';
 
 const Main = () => {
     return (
         <Container>
-      
         <Wrapper>
-            <div>
             <Title>RENEWABLE ENERGY For any task</Title>
-            </div>
-            <div>
+            <Cover>
             <Text>Development and implementation of renewable non-polluting energy sources, generating power generation using energy wind, sun, water, biomass</Text>
-            </div>
-           <div> 
             <StyledLink to="#">
                 Learn more
                 <ArrowRight/>
             </StyledLink>
-            </div> 
+            </Cover> 
         </Wrapper>
 
         <AddressWrapper>
