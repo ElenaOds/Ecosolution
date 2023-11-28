@@ -20,7 +20,6 @@ const Main = () => {
             <Text style={{ marginBottom: "0" }}>office@ecosolution.com</Text>
             <CopyRight>ecosolution © 2023</CopyRight>
         </AddressWrapper>
-
         <Img />
         </Container>
     )

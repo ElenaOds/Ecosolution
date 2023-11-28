@@ -8,18 +8,19 @@ const text = `
   line-height: 1.2;
   color: var(--textColor);
 `;
+
 export const Container = styled.section`
     padding-top: 126px;
-    padding-bottom: 36px;
+    margin-bottom: 36px;
  
     @media screen and (min-width: 768px) {
         padding-top: 128px;
-        padding-bottom: 100px;
+        margin-bottom: 100px;
     }
 
     @media screen and (min-width: 1280px) {
         padding-top: 176px;
-        padding-bottom: 120px;
+        margin-bottom: 120px;
     }
 `;
 
@@ -174,16 +175,12 @@ export const Img = styled.img`
     background-size: cover;
     width: 100%;
     height: 200px;
-    margin-bottom: 36px;
-
 
     @media screen and (min-width: 768px) {
         height: 348px;
-        margin-bottom: 101px;
     }
 
     @media screen and (min-width: 1280px) {
         height: 524px;
-        margin-bottom: 123px;
     }
 `;
