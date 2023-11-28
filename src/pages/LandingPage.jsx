@@ -1,5 +1,5 @@
 import Header from '../components/Header/Header';
-import Hero from '../components/Hero/Hero';
+import Main from '../components/Main/Main';
 
 import { Container } from './LandingPage.styled';
 
@@ -7,7 +7,7 @@ const LandingPage = () => {
     return (
         <Container>
           <Header />
-          <Hero/>
+          <Main/>
         </Container>
     )
 }

@@ -84,9 +84,10 @@ export const Styledlink = styled.a`
         font-family: Fira Sans;
         font-weight: 400;
         font-size: 16px;
-        line-height: 19.2px;
+        line-height: 1.2;
         color: var(--textColor);
         text-decoration: none;
+        cursor: pointer;
 
         &::after {
             content: '';
