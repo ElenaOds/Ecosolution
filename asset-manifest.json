@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/ecosolution/static/css/main.d033f2be.css",
+    "main.js": "/ecosolution/static/js/main.c08b2943.js",
+    "static/js/534.f7ac957a.chunk.js": "/ecosolution/static/js/534.f7ac957a.chunk.js",
+    "static/js/807.cf91e3a0.chunk.js": "/ecosolution/static/js/807.cf91e3a0.chunk.js",
+    "index.html": "/ecosolution/index.html",
+    "main.d033f2be.css.map": "/ecosolution/static/css/main.d033f2be.css.map",
+    "main.c08b2943.js.map": "/ecosolution/static/js/main.c08b2943.js.map",
+    "534.f7ac957a.chunk.js.map": "/ecosolution/static/js/534.f7ac957a.chunk.js.map",
+    "807.cf91e3a0.chunk.js.map": "/ecosolution/static/js/807.cf91e3a0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d033f2be.css",
+    "static/js/main.c08b2943.js"
+  ]
+}
