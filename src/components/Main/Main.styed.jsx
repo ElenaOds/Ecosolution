@@ -11,16 +11,16 @@ const text = `
 
 export const Container = styled.section`
     padding-top: 126px;
-    margin-bottom: 36px;
+    padding-bottom: 36px;
  
     @media screen and (min-width: 768px) {
         padding-top: 128px;
-        margin-bottom: 100px;
+        padding-bottom: 100px;
     }
 
     @media screen and (min-width: 1280px) {
         padding-top: 176px;
-        margin-bottom: 120px;
+        padding-bottom: 120px;
     }
 `;
 
@@ -169,7 +169,6 @@ export const CopyRight = styled.p`
 
 export const Img = styled.img`
     background-image: url(${hero});
-  
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
