@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/ecosolution/static/css/main.cec0e818.css",
-    "main.js": "/ecosolution/static/js/main.ae6b9a6e.js",
-    "static/js/903.c386f947.chunk.js": "/ecosolution/static/js/903.c386f947.chunk.js",
-    "static/js/306.982bc783.chunk.js": "/ecosolution/static/js/306.982bc783.chunk.js",
+    "main.js": "/ecosolution/static/js/main.b3c1f7d1.js",
+    "static/js/350.b8f67e78.chunk.js": "/ecosolution/static/js/350.b8f67e78.chunk.js",
+    "static/js/334.5a310571.chunk.js": "/ecosolution/static/js/334.5a310571.chunk.js",
     "static/media/hero.webp": "/ecosolution/static/media/hero.6010d572af0734e6ec6a.webp",
     "static/media/about1.webp": "/ecosolution/static/media/about1.fc327cb9704bd40b7c29.webp",
     "static/media/about2.webp": "/ecosolution/static/media/about2.f9b553c6f2815ed405dc.webp",
@@ -18,12 +18,12 @@
     "static/media/arrow_down.svg": "/ecosolution/static/media/arrow_down.b9a6913ed9a12500ce469057e70a57fb.svg",
     "static/media/burger.svg": "/ecosolution/static/media/burger.c7f94e2a4b616ab1fbca0a59387119df.svg",
     "main.cec0e818.css.map": "/ecosolution/static/css/main.cec0e818.css.map",
-    "main.ae6b9a6e.js.map": "/ecosolution/static/js/main.ae6b9a6e.js.map",
-    "903.c386f947.chunk.js.map": "/ecosolution/static/js/903.c386f947.chunk.js.map",
-    "306.982bc783.chunk.js.map": "/ecosolution/static/js/306.982bc783.chunk.js.map"
+    "main.b3c1f7d1.js.map": "/ecosolution/static/js/main.b3c1f7d1.js.map",
+    "350.b8f67e78.chunk.js.map": "/ecosolution/static/js/350.b8f67e78.chunk.js.map",
+    "334.5a310571.chunk.js.map": "/ecosolution/static/js/334.5a310571.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cec0e818.css",
-    "static/js/main.ae6b9a6e.js"
+    "static/js/main.b3c1f7d1.js"
   ]
 }
