@@ -85,6 +85,7 @@ export const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     margin-bottom: 36px;
+    position: relative;
 
     @media screen and (min-width: 768px) {
         flex-direction: row;
@@ -95,6 +96,7 @@ export const Wrapper = styled.div`
     @media screen and (min-width: 1280px) {
         margin-bottom: 122px;
     }
+
 `;
 
 export const List = styled.ul`

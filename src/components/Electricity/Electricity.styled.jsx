@@ -34,9 +34,33 @@ export const SubTitle = styled.h2`
 `;
 
 export const Wrapper = styled.div`
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: 1px;
+        height: 48px;
+        background-color: var(--lightGreen);     
+        top: -70px;
+        left: 50%;
+    }
+
+    @media screen and (min-width: 768px) {
+        &::before {
+            height: 87px;
+            top: -105px;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        &::before {
+            top: -90px;
+        }
+    }
 `;
 
 export const Counter = styled.p`
@@ -75,5 +99,4 @@ export const Text = styled.p`
         font-size: 48px;
         line-height: 1;
     }
-
-`
+`;
