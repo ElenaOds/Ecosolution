@@ -8,8 +8,7 @@ export const Container = styled.section`
 
     & > .swiper .swiper-wrapper {
         position: relative;
-        bottom: 0;
-        
+        bottom: 0;    
     }
  
     @media screen and (min-width: 768px) {
@@ -43,7 +42,6 @@ export const SubTitle = styled.h2`
     font-size: 36px;
     margin-bottom: 0;
     width: 272px;
-
 }
 
 @media screen and (min-width: 1280px) {

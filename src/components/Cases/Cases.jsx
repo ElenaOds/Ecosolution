@@ -1,11 +1,9 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
 import { useRef, useCallback} from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import {  Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/a11y';
 import 'swiper/css/pagination';
-
-
-import {  Pagination } from 'swiper/modules';
 
 import carousel1 from '../../assets/images/carousel-img1.webp';
 import carousel2 from '../../assets/images/carousel-img2.webp';
@@ -13,14 +11,10 @@ import carousel3 from '../../assets/images/carousel-img3.webp';
 import carousel4 from '../../assets/images/carousel-img4.webp';
 import carousel5 from '../../assets/images/carousel-img5.webp';
 
-
 import { Container, SubTitle, Wrapper, StyledArrowLeft, StyledArrowRight, NavWrapper, ButtonWrapper, Button, ItemNumber, StyledArrowCarousel, Card, TitleWrapper, TextWrapper, CardTitle, CardText, Img } from './Cases.styled';
 
 
-
-
 const Cases = () => {
-
     const breakpoints = {
         0: {
           slidesPerView: 1,
