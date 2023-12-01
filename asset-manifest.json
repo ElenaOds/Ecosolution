@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/ecosolution/static/css/main.cec0e818.css",
-    "main.js": "/ecosolution/static/js/main.d3b8bddc.js",
-    "static/css/413.65f5cd16.chunk.css": "/ecosolution/static/css/413.65f5cd16.chunk.css",
-    "static/js/413.be2aa4a4.chunk.js": "/ecosolution/static/js/413.be2aa4a4.chunk.js",
+    "main.js": "/ecosolution/static/js/main.cf4a9ed7.js",
+    "static/css/17.79091a45.chunk.css": "/ecosolution/static/css/17.79091a45.chunk.css",
+    "static/js/17.fb3af00b.chunk.js": "/ecosolution/static/js/17.fb3af00b.chunk.js",
     "static/js/489.2bffd95f.chunk.js": "/ecosolution/static/js/489.2bffd95f.chunk.js",
     "static/media/hero.webp": "/ecosolution/static/media/hero.6010d572af0734e6ec6a.webp",
     "static/media/carousel-img2.webp": "/ecosolution/static/media/carousel-img2.6e9070de888483bdcd02.webp",
@@ -23,17 +23,19 @@
     "static/media/arrow_left.svg": "/ecosolution/static/media/arrow_left.8251206fdcf350a073b59f100f061440.svg",
     "static/media/arrow_right.svg": "/ecosolution/static/media/arrow_right.774855509f1b0e11ee372110e5793377.svg",
     "static/media/arrow-carousel.svg": "/ecosolution/static/media/arrow-carousel.29f949fe72838b9e8332069555f01eef.svg",
+    "static/media/plus.svg": "/ecosolution/static/media/plus.18018ecb7520511c1ef7ed7229d22d4c.svg",
     "static/media/arrow-right.svg": "/ecosolution/static/media/arrow-right.6e56e21ee74b2b7d4866be9caaa77801.svg",
     "static/media/arrow_down.svg": "/ecosolution/static/media/arrow_down.b9a6913ed9a12500ce469057e70a57fb.svg",
     "static/media/burger.svg": "/ecosolution/static/media/burger.c7f94e2a4b616ab1fbca0a59387119df.svg",
+    "static/media/minus.svg": "/ecosolution/static/media/minus.06823d08b7149db9f2adc6371ef81ae6.svg",
     "main.cec0e818.css.map": "/ecosolution/static/css/main.cec0e818.css.map",
-    "main.d3b8bddc.js.map": "/ecosolution/static/js/main.d3b8bddc.js.map",
-    "413.65f5cd16.chunk.css.map": "/ecosolution/static/css/413.65f5cd16.chunk.css.map",
-    "413.be2aa4a4.chunk.js.map": "/ecosolution/static/js/413.be2aa4a4.chunk.js.map",
+    "main.cf4a9ed7.js.map": "/ecosolution/static/js/main.cf4a9ed7.js.map",
+    "17.79091a45.chunk.css.map": "/ecosolution/static/css/17.79091a45.chunk.css.map",
+    "17.fb3af00b.chunk.js.map": "/ecosolution/static/js/17.fb3af00b.chunk.js.map",
     "489.2bffd95f.chunk.js.map": "/ecosolution/static/js/489.2bffd95f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cec0e818.css",
-    "static/js/main.d3b8bddc.js"
+    "static/js/main.cf4a9ed7.js"
   ]
 }
