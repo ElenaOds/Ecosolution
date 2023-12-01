@@ -9,10 +9,14 @@ export const Container = styled.section`
 
     @media screen and (min-width: 768px) {
         padding-bottom: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0 24px;
     }
 
     @media screen and (min-width: 1280px) {
         padding-bottom: 120px;
+        gap: 0 48px;
     }
 `;
 
@@ -161,6 +165,10 @@ export const Text = styled.p`
     text-align: center;
     margin-bottom: 12px;
 
+    @media screen and (min-width: 768px) {
+        text-align: left;
+    }
+
     @media screen and (min-width: 1280px) {
         font-size: 24px;
     }
@@ -187,4 +195,15 @@ export const QuestionWrapper = styled.div`
     @media screen and (min-width: 768px) {
         gap: 16px;
     }
+`;
+
+export const GridItemsWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @media screen and (min-width: 1280px) {
+        align-items: center;
+    }
+
 `
