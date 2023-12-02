@@ -5,23 +5,40 @@ import { ReactComponent as Burger } from '../../assets/icons/burger.svg';
 import { ReactComponent as ArrowDown } from '../../assets/icons/arrow_down.svg';
 
 
+export const StyledHeader = styled.header`
+
+    &.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: #fff;
+    transition: .3s ease-in-out;
+ }
+`;
+
 export const Container = styled.div`
-    padding-top: 20px;
-    padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    padding: 20px;
+    max-width: 480px;
+    margin: auto;
+    
+
 
     @media screen and (min-width: 768px) {
-        padding-top: 36px;
-        padding-bottom: 36px;
+        padding: 36px 30px;
+        max-width: 768px;
     }
 
     @media screen and (min-width: 1280px) {
-        padding-top: 24px;
-        padding-bottom: 24px;
+        padding: 24px 100px;
+        max-width: 1280px;
     }
 `;
+
 export const StyledLogo = styled(Logo)`
     display: block;
 `;

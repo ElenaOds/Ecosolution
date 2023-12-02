@@ -29,7 +29,7 @@ const Faq = () => {
                     <Question onClick={() => setOpenItemIndex(index)}>{item.question}</Question>
                     </QuestionWrapper>
 
-                {openItemIndex === index &&  <Answer>{item.anwser}</Answer> }
+                {openItemIndex === index && <Answer>{item.anwser}</Answer> }
                 </Item>
                )
                })}

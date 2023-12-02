@@ -5,18 +5,18 @@ export const faqList = [
     },
     {
         question: "What sets EcoSolution's renewable energy solutions apart from others on the market?",
-        anwser: "Renewable energy solutions are becoming increasingly popular due to their environmental benefits and cost-effectiveness. EcoSolution uses energy which is derived from natural sources that are constantly replenished, such as wind and sunlight. This makes them a more sustainable and eco-friendly alternative to non-renewable energy sources like coal and oil.",
+        anwser: "Our renewable energy solutions stand out through a comprehensive approach covering solar, wind, and cutting-edge technologies. We prioritize customization to meet specific needs, uphold environmental stewardship, boast a seasoned team with a proven track record, and maintain a client-centric focus. Choosing EcoSolution means opting for innovative, tailored, and environmentally conscious energy solutions.",
     },
     {
         question: "How can businesses and communities benefit from integrating renewable energy solutions from EcoSolution?",
-        anwser: "EcoSolution, a renewable energy solutions provider, can help businesses and communities integrate renewable energy solutions into their operations. By doing so, they can reap the benefits mentioned above and contribute to a more sustainable future.",
+        anwser: "Businesses and communities gain sustainable advantages by integrating EcoSolution's renewable energy solutions. Our tailored approach ensures cost-effective, eco-friendly energy solutions, fostering environmental responsibility, reducing long-term operational costs, and promoting energy independence for a resilient future.",
     },
     {
         question: "What measures does EcoSolution take to ensure the environmental sustainability of its products?",
-        anwser: "EcoSolutions is committed to environmental sustainability. The label provides full transparency to environmental impacts across the entire product lifecycle.",
+        anwser: "EcoSolution prioritizes environmental sustainability by employing eco-friendly materials in product manufacturing, minimizing carbon footprint in production processes, and ensuring energy-efficient designs. We are committed to responsible sourcing, recycling initiatives, and continuous improvement in green practices to mitigate environmental impact.",
     },
     {
         question: "How does EcoSolution engage with local communities and support a just transition to renewable energy?",
-        anwser: "EcoSolution supports a just transition to renewable energy by empowering people and putting them at the center of all clean energy transitions. They believe that community-based energy projects are effective vehicles towards more inclusive, equitable, and resilient energy systems.",
+        anwser: "EcoSolution fosters community engagement by collaborating with local stakeholders, providing education on renewable energy benefits, and offering job opportunities. Our commitment to a just transition involves prioritizing social equity, supporting local economies, and ensuring that the shift to renewable energy is inclusive and beneficial for all.",
     },
 ]

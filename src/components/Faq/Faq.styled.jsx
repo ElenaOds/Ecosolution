@@ -149,10 +149,10 @@ export const Answer = styled.p`
     ${text}
     font-size: 14px;
     margin-top: 16px;
-    margin-left: 24px;
+    margin-left: 20px;
 
     @media screen and (min-width: 768px) {
-        margin-left: 44px;
+        margin-left: 32px;
     }
 
     @media screen and (min-width: 1280px) {

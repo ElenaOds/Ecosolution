@@ -9,14 +9,16 @@ import { Container } from './LandingPage.styled';
 
 const LandingPage = () => {
     return (
+      <>
+      <Header />
         <Container>
-          <Header />
           <Main/>
           <About />
           <Electricity/>
           <Cases />
           <Faq/>
         </Container>
+      </>
     )
 }
 
