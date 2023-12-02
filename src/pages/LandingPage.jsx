@@ -5,6 +5,7 @@ import Electricity from '../components/Electricity/Electricity';
 import Cases from '../components/Cases/Cases';
 import Faq from '../components/Faq/Faq';
 import Contact from '../components/Contact/Contact';
+import Footer from '../components/Footer/Footer';
 
 import { Container } from './LandingPage.styled';
 
@@ -13,12 +14,13 @@ const LandingPage = () => {
       <>
       <Header />
         <Container>
-          <Main/>
+          <Main />
           <About />
-          <Electricity/>
+          <Electricity />
           <Cases />
-          <Faq/>
-          <Contact/>
+          <Faq />
+          <Contact />
+          <Footer />
         </Container>
       </>
     )

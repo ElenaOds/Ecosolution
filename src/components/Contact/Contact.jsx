@@ -10,18 +10,18 @@ const Contact = () => {
             <List>
                 <li>
                     <Name>Phone:</Name>
-                    <InfoWrapper>
+                    <InfoWrapper style={{cursor: 'pointer'}}>
                     <StyledPhone style={{marginBottom: '12px'}}/>
-                    <Contacts  href="tel:+380981234567" style={{marginBottom: '12px'}}>38 (098) 12 34 567</Contacts>
+                    <Contacts href="tel:+380981234567" style={{marginBottom: '12px'}}>38 (098) 12 34 567</Contacts>
                     </InfoWrapper>
-                    <InfoWrapper>
+                    <InfoWrapper style={{cursor: 'pointer'}}>
                         <StyledPhone />
                     <Contacts href="tel:+380981234567">38 (093) 12 34 567</Contacts>
                     </InfoWrapper>
                 </li>
                 <li>
                     <Name>E-mail:</Name>
-                    <InfoWrapper>
+                    <InfoWrapper style={{cursor: 'pointer'}}>
                         <StyledEmail />
                     <Contacts href="mailto:office@ecosolution.com">office@ecosolution.com</Contacts>
                     </InfoWrapper>

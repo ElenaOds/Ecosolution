@@ -72,6 +72,7 @@ export const StyledTextArea = styled(Field)`
 
     @media screen and (min-width: 1280px) {
         margin-bottom: 32px;
+        font-size: 20px;
     }
 
     &::placeholder {

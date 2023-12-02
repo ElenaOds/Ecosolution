@@ -6,7 +6,6 @@ import { ReactComponent as ArrowDown } from '../../assets/icons/arrow_down.svg';
 
 
 export const StyledHeader = styled.header`
-
     &.sticky {
     position: fixed;
     top: 0;
@@ -25,8 +24,6 @@ export const Container = styled.div`
     max-width: 480px;
     margin: auto;
     
-
-
     @media screen and (min-width: 768px) {
         padding: 36px 30px;
         max-width: 768px;
