@@ -4,6 +4,7 @@ import About from '../components/About/About';
 import Electricity from '../components/Electricity/Electricity';
 import Cases from '../components/Cases/Cases';
 import Faq from '../components/Faq/Faq';
+import Contact from '../components/Contact/Contact';
 
 import { Container } from './LandingPage.styled';
 
@@ -17,6 +18,7 @@ const LandingPage = () => {
           <Electricity/>
           <Cases />
           <Faq/>
+          <Contact/>
         </Container>
       </>
     )
