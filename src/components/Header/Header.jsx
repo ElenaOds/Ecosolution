@@ -37,7 +37,7 @@ window.addEventListener("scroll", setSticky)
             </LogoWrapper>
             <Wrapper>
                 <StyledBurger />
-                <Styledlink to="#">Get in touch
+                <Styledlink href="#contact" aria-label="link to Contact us section">Get in touch
                     <StyledArrow />
                 </Styledlink>
             </Wrapper>

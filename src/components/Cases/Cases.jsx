@@ -44,7 +44,7 @@ const Cases = () => {
  
 
     return (
-        <Container>
+        <Container id='cases'>
             <Wrapper>
             <SubTitle>Successful cases of our company</SubTitle>
             <NavWrapper>

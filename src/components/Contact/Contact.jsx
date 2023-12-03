@@ -4,7 +4,7 @@ import { Container, SubTitle, List, Name, Contacts, StyledPhone, InfoWrapper, In
 const Contact = () => {
 
     return (
-        <Container>
+        <Container id="contact">
             <SubTitle>Contact us</SubTitle>
             <Wrapper>
             <List>

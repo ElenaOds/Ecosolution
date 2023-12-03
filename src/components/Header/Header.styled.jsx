@@ -101,6 +101,7 @@ export const Styledlink = styled.a`
         color: var(--textColor);
         text-decoration: none;
         cursor: pointer;
+        scroll-behavior: smooth;
 
         &::after {
             content: '';

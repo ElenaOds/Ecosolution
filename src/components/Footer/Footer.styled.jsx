@@ -1,6 +1,7 @@
 import styled from "@emotion/styled/macro";
 import { ReactComponent as Logo } from '../../assets/icons/logo.svg';
 import { ReactComponent as LogoHovered } from '../../assets/icons/logo_hover.svg';
+import { ReactComponent as ArrowTop } from '../../assets/icons/arrow-top.svg';
 import { ReactComponent as Facebook } from '../../assets/icons/facebook.svg';
 import { ReactComponent as Instagram } from '../../assets/icons/instagram.svg';
 
@@ -33,21 +34,26 @@ export const Container = styled.div`
         column-gap: 24px;
 
         & > :nth-of-type(2) {
-            grid-column-start: 2;  
-            grid-row-start: 2;
+            grid-column-start: 3;  
+            grid-row-start: 1;
         }
 
         & > :nth-child(3) {
+            grid-column-start: 2;  
+            grid-row-start: 1;
+        }
+
+        & > :nth-child(4) {
             grid-column-start: 1;  
             grid-row-start: 2;
         }
 
-        & > :nth-child(4) {
+        & > :nth-child(5) {
             grid-column-start: 2;  
             grid-row-start: 2;
         }
 
-        & > :nth-child(5) {
+        & > :nth-child(6) {
             grid-column-start: 3;  
             grid-row-start: 2;
         }
@@ -69,7 +75,8 @@ export const StyledLogoHovered = styled(LogoHovered)`
 export const LogoWrapper = styled.a`
     text-decoration: none;
     cursor: pointer;
-    margin-bottom: 24px;
+   
+    
 
     &:hover ${StyledLogo} {
         display: none;
@@ -82,6 +89,35 @@ export const LogoWrapper = styled.a`
     @media screen and (min-width: 768px) {
         margin-bottom: 0;
     }
+`;
+
+export const StyledArrowTop = styled(ArrowTop)`
+    &:hover  {
+        & > rect {
+            fill: var(--textColor);
+        }
+    
+         & > path {
+        stroke: var(--lightGreen);
+        }
+    }
+`;
+
+export const Link = styled.a`
+    cursor: pointer; 
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: flex-end;
+    }
+`;
+
+export const LinksWrapper = styled.div`
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
 `;
 
 export const Social = styled.div`
@@ -136,8 +172,5 @@ export const Text = styled.p`
             text-align: end;
         }
     }
+`;
 
-
-
-
-`

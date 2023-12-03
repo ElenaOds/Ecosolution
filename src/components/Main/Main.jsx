@@ -3,12 +3,12 @@ import { Container, Title, Text, StyledLink, Wrapper, AddressWrapper, Address, C
 
 const Main = () => {
     return (
-        <Container>
+        <Container id="main">
         <Wrapper>
             <Title>RENEWABLE ENERGY For any task</Title>
             <Cover>
             <Text>Development and implementation of renewable non-polluting energy sources, generating power generation using energy wind, sun, water, biomass</Text>
-            <StyledLink to="#">
+            <StyledLink href="#cases" aria-label="link to Cases section">
                 Learn more
                 <ArrowRight/>
             </StyledLink>

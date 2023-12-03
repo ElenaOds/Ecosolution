@@ -38,7 +38,7 @@ const Faq = () => {
                 <SubTitle>Frequently Asked <br/>Questions</SubTitle>
             <div>
             <Text>Didn't find the answer to your question?</Text>
-            <Styledlink to="#">Contact Us
+            <Styledlink href="#contact" aria-label="link to Contact us section">Contact Us
                     <StyledArrow />
                 </Styledlink>
             </div>
@@ -64,7 +64,7 @@ const Faq = () => {
             </List>
             <div>
             <Text>Didn't find the answer to your question?</Text>
-            <Styledlink to="#">Contact Us
+            <Styledlink href="#contact" aria-label="link to Contact us section">Contact Us
                     <StyledArrow />
                 </Styledlink>
             </div>
