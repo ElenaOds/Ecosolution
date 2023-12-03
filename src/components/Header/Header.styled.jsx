@@ -16,6 +16,7 @@ export const StyledHeader = styled.header`
  }
 `;
 
+
 export const Container = styled.div`
     display: flex;
     justify-content: space-between;
@@ -128,3 +129,10 @@ export const Styledlink = styled.a`
         }
     }
 `;
+
+export const Button = styled.button`
+    outline: none;
+    border: none;
+    background-color: transparent;
+`;
+

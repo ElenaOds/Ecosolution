@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
-
-import { Container, LogoWrapper, StyledLogo, StyledLogoHovered, StyledBurger, Wrapper, Styledlink, StyledArrow, StyledHeader } from './Header.styled';
+import BurgerMenu from '../BurgerMenu/BurgerMenu';
+import { Container, LogoWrapper, StyledLogo, StyledLogoHovered, StyledBurger, Wrapper, Styledlink, StyledArrow, StyledHeader, Button } from './Header.styled';
 
 const Header = () => {
    const [sticky, setSticky] = useState(false);
+   const [open, setOpen] = useState(false);
 
    useEffect(() => {
     window.addEventListener("scroll", isSticky);
@@ -25,6 +26,10 @@ const Header = () => {
     }
   };
 
+  const toggleMenu = () => {
+    setOpen(!open);
+  };
+
 
 window.addEventListener("scroll", setSticky)
 
@@ -36,11 +41,12 @@ window.addEventListener("scroll", setSticky)
                 <StyledLogoHovered/>
             </LogoWrapper>
             <Wrapper>
-                <StyledBurger />
+              <Button onClick={toggleMenu}><StyledBurger /></Button>
                 <Styledlink href="#contact" aria-label="link to Contact us section">Get in touch
                     <StyledArrow />
                 </Styledlink>
             </Wrapper>
+            <BurgerMenu toggleMenu={toggleMenu} open={open}/>
         </Container>
         </StyledHeader>
     )

@@ -17,7 +17,7 @@ const Faq = () => {
 
     return (
       
-        <Container>
+        <Container id="faq">
             {isTablet ? (
         <>
             <List>
