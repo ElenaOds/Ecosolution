@@ -13,6 +13,16 @@ const text = `
   color: rgba(255, 255, 255, 0.25);
 `;
 
+export const Backdrop = styled.div`
+    position: fixed;
+    top: 0;
+    left: 0;    
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(23, 61, 51, 0.25);
+    backdrop-filter: blur(2px);
+`
 
 export const StyledBurgerArrow = styled(BurgerArrow)`
       margin-left: 8px;
@@ -21,11 +31,9 @@ export const StyledBurgerArrow = styled(BurgerArrow)`
       }
 `;
 
-export const Navigation = styled.nav`
+export const BurgerWrapper = styled.div`
+    opacity: 0;
     position: fixed;
-    display: flex;
-    flex-direction: column;
-    justify-content: spece-between;
     top: 36px;
     bottom: 36px;
     left: 20px;
@@ -35,7 +43,30 @@ export const Navigation = styled.nav`
     z-index: 10;
     padding: 24px;
     background-color: rgba(23, 61, 51, 0.75);
-    border-radius: 25px;     
+    border-radius: 25px;   
+    transform: translateX(100%);
+    transition: 0.5s ease-in-out; 
+
+    &.active {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    @media screen and (min-width: 768px) {
+        right: 30px;
+        bottom: 36px;
+        margin: 0;
+        left: auto;
+        width: 320px;
+        max-width: 320px;
+    }
+`;
+
+export const Navigation = styled.nav`
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 `;
 
 export const StyledCross = styled(Cross)`
@@ -95,8 +126,8 @@ export const BurgerList = styled.ul`
 export const BurgerText = styled.a`
     ${text}
     font-size: 24px;
-    text-decoration: none;
-`
+    text-decoration: none; 
+`;
 
 export const BurgerItem = styled.li`
     display: flex;
@@ -110,6 +141,15 @@ export const BurgerItem = styled.li`
     &:hover ${StyledBurgerArrow} {
         & > path {
             stroke: var(--scrollBg);  
+        }
+    }
+
+    &.active ${BurgerText}{
+        color: var(--lightGreen);
+    }
+    &.active ${StyledBurgerArrow} {
+        & > path {
+            stroke: var(--lightGreen);  
         }
     }
 `;
@@ -129,6 +169,7 @@ export const StyledInstagram = styled(Instagram)`
 export const Social = styled.div`
     display: flex;
     gap: 8px;
+    margin-bottom: 24px;
 `;
 
 export const SocialLink = styled.a`
@@ -144,3 +185,5 @@ export const SocialLink = styled.a`
         }
     }
 `;
+
+

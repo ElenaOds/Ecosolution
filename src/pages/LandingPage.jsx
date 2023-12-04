@@ -10,6 +10,7 @@ import Footer from '../components/Footer/Footer';
 import { Container } from './LandingPage.styled';
 
 const LandingPage = () => {
+
     return (
       <>
       <Header />

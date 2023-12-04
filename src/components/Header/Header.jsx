@@ -41,7 +41,7 @@ window.addEventListener("scroll", setSticky)
                 <StyledLogoHovered/>
             </LogoWrapper>
             <Wrapper>
-              <Button onClick={toggleMenu}><StyledBurger /></Button>
+              <Button onClick={toggleMenu} aria-label="open burger menu"><StyledBurger /></Button>
                 <Styledlink href="#contact" aria-label="link to Contact us section">Get in touch
                     <StyledArrow />
                 </Styledlink>

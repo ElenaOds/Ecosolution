@@ -50,8 +50,8 @@ const Cases = () => {
             <NavWrapper>
                 <ItemNumber className="custom-pagination"></ItemNumber>
                 <ButtonWrapper>
-                    <Button onClick={handlePrev}><StyledArrowLeft /></Button>
-                    <Button onClick={handleNext}><StyledArrowRight /></Button>
+                    <Button onClick={handlePrev} aria-label="click to prevoius slide"><StyledArrowLeft /></Button>
+                    <Button onClick={handleNext} aria-label="click to next slide"><StyledArrowRight /></Button>
                 </ButtonWrapper>
             </NavWrapper>
             </Wrapper> 

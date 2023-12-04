@@ -151,6 +151,7 @@ export const Answer = styled.p`
     margin-top: 16px;
     margin-left: 20px;
 
+
     @media screen and (min-width: 768px) {
         margin-left: 32px;
     }

@@ -161,6 +161,7 @@ export const Text = styled.p`
     line-height: 1.2;
     color: var(--textColor);
     margin-bottom: 16px;
+    text-decoration: none;
 
     &:last-of-type {
         margin-bottom: 0;    

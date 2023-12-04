@@ -58,6 +58,11 @@ export const StyledField = styled(Field)`
 
     @media screen and (min-width: 1280px) {
         font-size: 20px;
+
+        margin-bottom: ${({  error  }) => 
+        error
+        ? '12px'
+        : '28px'};
     }
 `;
 
@@ -89,6 +94,7 @@ export const Button = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 3px 3px 3px 12px;
     width: 99px;
     height: 39px;
     border-radius: 500px;
@@ -99,6 +105,7 @@ export const Button = styled.button`
     ${text}
     font-size: 16px;
     line-height: 1.125px;
+    background-color: transparent;
     
     &:hover {
         border: 1px solid var(--textColor);
@@ -112,4 +119,9 @@ export const StyledError = styled(ErrorMessage)`
     font-size: 12px;
     color: var(--errorColor);
     text-align: right;
+    margin-bottom: 6px;
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 2px;
+    }
 `;

@@ -5,7 +5,7 @@ import ValidationSchema from './ValidationSchema';
 import { ReactComponent as ArrowRight } from '../../assets/icons/arrow-right.svg';
 import { StyledForm, Label, StyledField, Button, ButtonWrapper, StyledError, StyledTextArea } from './Form.styled';
 
-const FormData = () => {
+const Form = () => {
 
     const initialValues = {
         name: '',
@@ -73,7 +73,7 @@ const FormData = () => {
                 style={{ resize: 'none' }}
             /> 
             <ButtonWrapper>
-         <Button type='submit'>Send<ArrowRight/></Button>
+                <Button type='submit'>Send<ArrowRight/></Button>
          </ButtonWrapper>
         </StyledForm>
           )}
@@ -82,4 +82,4 @@ const FormData = () => {
     )
 }
 
-export default FormData;
+export default Form;

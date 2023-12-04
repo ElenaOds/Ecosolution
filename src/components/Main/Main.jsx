@@ -16,7 +16,7 @@ const Main = () => {
         </Wrapper>
 
         <AddressWrapper>
-            <Address>79005, Ukraine, Lviv street. Shota Rustaveli, 7</Address>
+            <Address>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</Address>
             <Text style={{ marginBottom: "0" }}>office@ecosolution.com</Text>
             <CopyRight>ecosolution © 2023</CopyRight>
         </AddressWrapper>

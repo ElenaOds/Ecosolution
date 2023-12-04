@@ -51,6 +51,7 @@ export const Text = styled.p`
     ${text}
     margin-bottom: 24px;
     text-align: justify;
+    text-decoration: none;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 43px;
@@ -71,7 +72,7 @@ export const StyledLink = styled.a`
     cursor: pointer;
     width: 141px;
     height: 39px;
-    padding: 0, 4px, 0, 16px;
+    padding: 0 4px 0 16px;
     border: 1px solid var(--lightGreen);
     border-radius: 500px;
     gap: 12px;

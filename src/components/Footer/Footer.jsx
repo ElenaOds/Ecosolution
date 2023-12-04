@@ -21,31 +21,31 @@ const Footer = () => {
             <StyledLogo/>
             <StyledLogoHovered/>
             </LogoWrapper>
-            <Link href="#main"><StyledArrowTop /></Link>
+            <Link href="#main" aria-label="link to Main section"><StyledArrowTop /></Link>
             <Social>
-                <StyledFacebook />
-                <StyledInstagram />
+            <a href="https://www.facebook.com/" target='blank' aria-label="link to Facebook"><StyledFacebook /></a>
+            <a href="https://www.instagram.com/" target='blank' aria-label="link to Instagram"><StyledInstagram /></a>
             </Social>
-            <Text>79005, Ukraine, Lviv street. Shota Rustaveli, 7</Text>
+            <Text>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</Text>
             <Text>office@ecosolution.com</Text>
             <Text>ecosolution © 2023</Text>
             </Container>
         ) : (
             <Container>
             <LinksWrapper>
-                <LogoWrapper href="#main" aria-label="logo">
+                <LogoWrapper href="#main" aria-label="logo" >
                     <StyledLogo/>
                     <StyledLogoHovered/>
                 </LogoWrapper>
-                <Link href="#main">
+                <Link href="#main" aria-label="link to Main section">
                     <StyledArrowTop />
                 </Link>
             </LinksWrapper>
         <Social>
-            <StyledFacebook />
-            <StyledInstagram />
+            <a href="https://www.facebook.com/" target='blank' aria-label="link to Facebook"><StyledFacebook /></a>
+            <a href="https://www.instagram.com/" target='blank' aria-label="link to Instagram"><StyledInstagram /></a>
         </Social>
-        <Text>79005, Ukraine, Lviv street. Shota Rustaveli, 7</Text>
+        <Text>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</Text>
         <Text>office@ecosolution.com</Text>
         <Text>ecosolution © 2023</Text>
         </Container>

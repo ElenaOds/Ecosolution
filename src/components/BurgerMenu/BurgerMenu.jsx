@@ -1,39 +1,70 @@
-import { StyledBurgerArrow, Navigation, StyledCross, CloseButton, BurgerList, BurgerItem, BurgerText, Social, StyledFacebook, StyledInstagram, SocialLink } from './BurgerMenu.styled';
+import React, { useState, useEffect, useRef } from 'react';
+import { StyledBurgerArrow, BurgerWrapper, StyledCross, CloseButton, BurgerList, BurgerItem, BurgerText, Social, StyledFacebook, StyledInstagram, SocialLink, Navigation, Backdrop } from './BurgerMenu.styled';
 
 const BurgerMenu = ({toggleMenu, open}) => {
+  const [activeSection, setActiveSection] = useState(null);
+  const observer = useRef(null);
+  
+
+  useEffect(() => {
+        observer.current = new IntersectionObserver((entries) => {
+          const visibleSection = entries.find((entry) => entry.isIntersecting)?.target;
+          if (visibleSection) {
+            setActiveSection(visibleSection.id);
+          }
+        });
+
+        const sections = document.querySelectorAll('section');
+    
+        sections.forEach((section) => {
+          observer.current.observe(section);
+        });
+
+        return () => {
+          sections.forEach((section) => {
+            observer.current.unobserve(section);
+          });
+        };
+      }, []);
+
 
     return (
         <>
-         <Navigation style={{display: open ? 'block' : 'none'}}>
-              <CloseButton onClick={toggleMenu}><StyledCross/>close</CloseButton>
-              <BurgerList>
-                <BurgerItem>
-                  <BurgerText href="#main">Main</BurgerText>
+        <Backdrop onClick={toggleMenu} style={{display: open ? 'block' : 'none'}}></Backdrop>
+         <BurgerWrapper onClick={toggleMenu} className={open ? 'active' : 'none' }>
+              <CloseButton><StyledCross/>close</CloseButton>
+              <Navigation >
+         
+             <BurgerList> 
+               <BurgerItem className={activeSection === 'main' ? 'active' : ''}> 
+                  <BurgerText href="#main" aria-label="link to Main section">Main</BurgerText>
                   <StyledBurgerArrow/>
                 </BurgerItem>
-                <BurgerItem>
-                  <BurgerText href="#about">About</BurgerText>
+                <BurgerItem className={activeSection === 'about' ? 'active' : ''}>
+                  <BurgerText href="#about" aria-label="link to About section">About</BurgerText>
                   <StyledBurgerArrow/>
                 </BurgerItem>
-                <BurgerItem>
-                  <BurgerText href="#cases">Cases</BurgerText>
+                <BurgerItem className={activeSection === 'cases' ? 'active' : ''}>
+                  <BurgerText href="#cases" aria-label="link to Cases section">Cases</BurgerText>
                   <StyledBurgerArrow/>
                 </BurgerItem>
-                <BurgerItem>
-                  <BurgerText href="#faq">FAQ</BurgerText>
+                <BurgerItem className={activeSection === 'faq' ? 'active' : ''}>
+                  <BurgerText href="#faq" aria-label="link to Frequently asked section">FAQ</BurgerText>
                   <StyledBurgerArrow/>
                 </BurgerItem>
-                <BurgerItem>
-                  <BurgerText href="#contact">Contact Us</BurgerText>
+                <BurgerItem className={activeSection === 'contact' ? 'active' : ''}>
+                  <BurgerText href="#contact"  aria-label="link to Contact us section">Contact Us</BurgerText>
                   <StyledBurgerArrow/>
-                </BurgerItem>
-              </BurgerList>
-
+                </BurgerItem> 
+               </BurgerList> 
+          
               <Social>
-                <SocialLink href="/#"><StyledFacebook/></SocialLink>
-                <SocialLink href="/#"><StyledInstagram/></SocialLink>
+                <SocialLink href="https://www.facebook.com/" target='blank' aria-label="link to Facebook"><StyledFacebook/></SocialLink>
+                <SocialLink href="https://www.instagram.com/" target='blank'aria-label="link to Instagram"><StyledInstagram/></SocialLink>
               </Social>
-            </Navigation>
+              
+              </Navigation>
+            </BurgerWrapper>
         </>
     )
 }
