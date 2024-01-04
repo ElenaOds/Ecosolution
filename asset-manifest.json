@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/ecosolution/static/css/main.3acc6f8a.css",
-    "main.js": "/ecosolution/static/js/main.6dbbd98d.js",
+    "main.css": "/ecosolution/static/css/main.6edb37b4.css",
+    "main.js": "/ecosolution/static/js/main.457fa228.js",
     "static/css/289.ef323c17.chunk.css": "/ecosolution/static/css/289.ef323c17.chunk.css",
-    "static/js/289.c466e3bb.chunk.js": "/ecosolution/static/js/289.c466e3bb.chunk.js",
-    "static/js/222.5f10741e.chunk.js": "/ecosolution/static/js/222.5f10741e.chunk.js",
+    "static/js/289.a3fd19f6.chunk.js": "/ecosolution/static/js/289.a3fd19f6.chunk.js",
+    "static/js/307.beee6688.chunk.js": "/ecosolution/static/js/307.beee6688.chunk.js",
     "static/media/hero.webp": "/ecosolution/static/media/hero.6010d572af0734e6ec6a.webp",
     "static/media/carousel-img2.webp": "/ecosolution/static/media/carousel-img2.6e9070de888483bdcd02.webp",
     "static/media/carousel-img3.webp": "/ecosolution/static/media/carousel-img3.f2c3168382888b3de9d7.webp",
@@ -36,14 +36,14 @@
     "static/media/arrow_down.svg": "/ecosolution/static/media/arrow_down.b9a6913ed9a12500ce469057e70a57fb.svg",
     "static/media/burger.svg": "/ecosolution/static/media/burger.c7f94e2a4b616ab1fbca0a59387119df.svg",
     "static/media/minus.svg": "/ecosolution/static/media/minus.06823d08b7149db9f2adc6371ef81ae6.svg",
-    "main.3acc6f8a.css.map": "/ecosolution/static/css/main.3acc6f8a.css.map",
-    "main.6dbbd98d.js.map": "/ecosolution/static/js/main.6dbbd98d.js.map",
+    "main.6edb37b4.css.map": "/ecosolution/static/css/main.6edb37b4.css.map",
+    "main.457fa228.js.map": "/ecosolution/static/js/main.457fa228.js.map",
     "289.ef323c17.chunk.css.map": "/ecosolution/static/css/289.ef323c17.chunk.css.map",
-    "289.c466e3bb.chunk.js.map": "/ecosolution/static/js/289.c466e3bb.chunk.js.map",
-    "222.5f10741e.chunk.js.map": "/ecosolution/static/js/222.5f10741e.chunk.js.map"
+    "289.a3fd19f6.chunk.js.map": "/ecosolution/static/js/289.a3fd19f6.chunk.js.map",
+    "307.beee6688.chunk.js.map": "/ecosolution/static/js/307.beee6688.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3acc6f8a.css",
-    "static/js/main.6dbbd98d.js"
+    "static/css/main.6edb37b4.css",
+    "static/js/main.457fa228.js"
   ]
 }
