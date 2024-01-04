@@ -79,7 +79,8 @@ export const StyledLink = styled.a`
     ${text}
     line-height: 1.125px;
 
-    &:hover {
+    &:hover,
+    &:focus {
         border: 1px solid var(--textColor);
         background-color: var(--textColor);
         color: var(--lightGreen);

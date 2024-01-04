@@ -36,8 +36,8 @@ const Contact = () => {
                 <li>
                     <Name>Social Networks:</Name>
                     <InfoWrapper>
-                        <Social href="https://www.facebook.com/" target='blank' aria-label="link to Facebook"><StyledFacebook/></Social>
-                        <Social href="https://www.instagram.com/" target='blank' aria-label="link to Instagram"><StyledInstagram/></Social>
+                        <Social href="https://www.facebook.com/" rel="noopener noreferrer nofollow" target='_blank' aria-label="link to Facebook"><StyledFacebook/></Social>
+                        <Social href="https://www.instagram.com/" rel="noopener noreferrer nofollow" target='_blank' aria-label="link to Instagram"><StyledInstagram/></Social>
                     </InfoWrapper>
                 </li>
             </List>

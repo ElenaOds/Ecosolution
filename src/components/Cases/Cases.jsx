@@ -50,8 +50,8 @@ const Cases = () => {
             <NavWrapper>
                 <ItemNumber className="custom-pagination"></ItemNumber>
                 <ButtonWrapper>
-                    <Button onClick={handlePrev} aria-label="click to prevoius slide"><StyledArrowLeft /></Button>
-                    <Button onClick={handleNext} aria-label="click to next slide"><StyledArrowRight /></Button>
+                    <Button onClick={handlePrev} type="button" aria-label="click to prevoius slide"><StyledArrowLeft /></Button>
+                    <Button onClick={handleNext} type="button" aria-label="click to next slide"><StyledArrowRight /></Button>
                 </ButtonWrapper>
             </NavWrapper>
             </Wrapper> 
@@ -67,10 +67,9 @@ const Cases = () => {
                 className="mySwiper"
                 ref={swiperRef}
             >
-            
             <SwiperSlide>
                 <Card>
-                    <Img src={carousel1} alt='wind power'/>
+                    <Img src={carousel1} alt='wind power' loading="lazy"/>
                     <TitleWrapper>
                         <CardTitle>Lviv Region, Radekhiv town Private Enterprise “ZAKHIDNYI BUH”</CardTitle>
                         <StyledArrowCarousel />
@@ -83,7 +82,7 @@ const Cases = () => {
             </SwiperSlide>
             <SwiperSlide>
                 <Card>
-                    <Img src={carousel2} alt='solar panels'/>
+                    <Img src={carousel2} alt='solar panels' loading="lazy"/>
                     <TitleWrapper>
                     <CardTitle>Zhytomyr city Private Enterprise “Bosch”</CardTitle>
                     <StyledArrowCarousel />
@@ -96,7 +95,7 @@ const Cases = () => {
             </SwiperSlide>
             <SwiperSlide>
                 <Card>
-                    <Img src={carousel3} alt='thermal modules'/>
+                    <Img src={carousel3} alt='thermal modules' loading="lazy"/>
                     <TitleWrapper>
                     <CardTitle>Zhytomyr city Private Enterprise “Bosch”</CardTitle>
                     <StyledArrowCarousel />
@@ -109,7 +108,7 @@ const Cases = () => {
             </SwiperSlide>
             <SwiperSlide>
                 <Card>
-                    <Img src={carousel4} alt='wind power'/>
+                    <Img src={carousel4} alt='wind power' loading="lazy"/>
                     <TitleWrapper>
                     <CardTitle>Kherson city Private Enterprise “HealthyFarm”</CardTitle>
                     <StyledArrowCarousel />
@@ -122,7 +121,7 @@ const Cases = () => {
             </SwiperSlide>
             <SwiperSlide>
                 <Card>
-                    <Img src={carousel5} alt='mini nuclear stations'/>
+                    <Img src={carousel5} alt='mini nuclear stations' loading="lazy"/>
                     <TitleWrapper>
                     <CardTitle>Zaporizhia city Private Enterprise “Biotech”</CardTitle>
                     <StyledArrowCarousel />

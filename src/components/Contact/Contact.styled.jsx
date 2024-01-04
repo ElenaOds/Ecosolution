@@ -77,10 +77,14 @@ export const Contacts = styled.a`
     ${text}
     font-size: 20px;
     text-decoration: none;
-
     
     @media screen and (min-width: 1280px) {
         font-size: 24px;
+    }
+
+    &:hover,
+    &:focus {
+        outline: none;
     }
 `;
 
@@ -88,20 +92,11 @@ export const Info = styled.p`
     ${text}
     font-size: 20px;
 
-    
     @media screen and (min-width: 1280px) {
         font-size: 24px;
     }
 `;
 
-export const Social = styled.a`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 48px;
-    height: 48px;
-
-`;
 
 export const StyledPhone = styled(Phone)`
     width: 24px;
@@ -121,19 +116,42 @@ export const StyledAddress = styled(Address)`
 export const StyledFacebook = styled(Facebook)`
     width: 24px;
     height: 24px;
-
-    &:hover  {
-         & > path {
-        stroke: var(--lightGreen);
-        }
-    }
 `;
 
 export const StyledInstagram = styled(Instagram)`
     width: 24px;
     height: 24px;
+`;
 
-    &:hover  {
+export const Social = styled.a`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 48px;
+
+    &:hover,
+    &:focus  {
+        outline: none;
+    }
+
+    &:hover ${StyledInstagram},
+    &:focus  ${StyledInstagram}{
+         & > path {
+        stroke: var(--lightGreen);
+        }
+    }
+
+    &:hover ${StyledFacebook},
+    &:focus  ${StyledFacebook}{
+         & > path {
+        stroke: var(--lightGreen);
+        }
+    }
+
+    
+    &:hover ${StyledEmail},
+    &:focus  ${StyledEmail}{
          & > path {
         stroke: var(--lightGreen);
         }
@@ -146,13 +164,15 @@ export const InfoWrapper = styled.div`
     gap: 8px;
 
    
-    &:hover ${StyledPhone} {
+    &:hover ${StyledPhone},
+    &:focus ${StyledPhone}  {
         & > path {
         stroke: var(--lightGreen);
         }
     }
 
-    &:hover ${StyledEmail} {
+    &:hover ${StyledEmail},
+    &:focus ${StyledEmail}  {
         & > path {
         stroke: var(--lightGreen);
         }

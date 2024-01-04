@@ -15,12 +15,14 @@ const LandingPage = () => {
       <>
       <Header />
         <Container>
+          <main>
           <Main />
           <About />
           <Electricity />
           <Cases />
           <Faq />
           <Contact />
+          </main>
           <Footer />
         </Container>
       </>

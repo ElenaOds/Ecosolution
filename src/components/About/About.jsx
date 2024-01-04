@@ -1,4 +1,6 @@
-import { Container, SubTitle, Text, Wrapper, List, ListItem, ListHeader, ListTitle, ListText, Img, StyledImg, StyledIcon1, StyledIcon2, StyledIcon3, StyledIcon4 } from './About.styled';
+import { Container, SubTitle, Text, Wrapper, List, ListItem, ListHeader, ListTitle, ListText, Img, StyledIcon1, StyledIcon2, StyledIcon3, StyledIcon4 } from './About.styled';
+import pic1 from '../../assets/images/about1.webp';
+import pic2 from '../../assets/images/about2.webp';
 
 const About = () => {
     return (
@@ -23,10 +25,10 @@ const About = () => {
                     <ListText>we are aware that the results of our work have an impact on our lives and the lives of future generations</ListText>
                 </ListItem>
                 <li>
-                <Img/>
+                <Img src={pic1} alt="wind power station" loading="lazy"/>
                 </li>
                 <li>
-               <StyledImg/>
+               <Img src={pic2} alt="solar panels" loading="lazy"/>
                </li>
                 <ListItem>
                     <ListHeader>

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Container, StyledLogo, StyledLogoHovered, LogoWrapper, Social, StyledFacebook, StyledInstagram, Text, StyledArrowTop, Link, LinksWrapper } from './Footer.styled';
+import { Container, StyledLogo, StyledLogoHovered, LogoWrapper, Social, StyledFacebook, StyledInstagram, Text, StyledArrowTop, Link, LinksWrapper, SocialLink } from './Footer.styled';
 
 const Footer = () => {
     const [isTablet, setTablet] = useState(window.innerWidth > 768);
@@ -23,8 +23,8 @@ const Footer = () => {
             </LogoWrapper>
             <Link href="#main" aria-label="link to Main section"><StyledArrowTop /></Link>
             <Social>
-            <a href="https://www.facebook.com/" target='blank' aria-label="link to Facebook"><StyledFacebook /></a>
-            <a href="https://www.instagram.com/" target='blank' aria-label="link to Instagram"><StyledInstagram /></a>
+            <SocialLink href="https://www.facebook.com/" rel="noopener noreferrer nofollow" target='_blank' aria-label="link to Facebook"><StyledFacebook /></SocialLink>
+            <SocialLink href="https://www.instagram.com/" rel="noopener noreferrer nofollow" target='_blank' aria-label="link to Instagram"><StyledInstagram /></SocialLink>
             </Social>
             <Text>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</Text>
             <Text>office@ecosolution.com</Text>
@@ -42,8 +42,8 @@ const Footer = () => {
                 </Link>
             </LinksWrapper>
         <Social>
-            <a href="https://www.facebook.com/" target='blank' aria-label="link to Facebook"><StyledFacebook /></a>
-            <a href="https://www.instagram.com/" target='blank' aria-label="link to Instagram"><StyledInstagram /></a>
+            <SocialLink href="https://www.facebook.com/" rel="noopener noreferrer nofollow" target='_blank' aria-label="link to Facebook"><StyledFacebook /></SocialLink>
+            <SocialLink href="https://www.instagram.com/" rel="noopener noreferrer nofollow" target='_blank' aria-label="link to Instagram"><StyledInstagram /></SocialLink>
         </Social>
         <Text>79005, Ukraine, Lvivstreet. Shota Rustaveli, 7</Text>
         <Text>office@ecosolution.com</Text>

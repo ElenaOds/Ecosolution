@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled/macro";
 import { ReactComponent as ArrowLeft } from '../../assets/icons/arrow_left.svg';
 import { ReactComponent as ArrowRight } from '../../assets/icons/arrow_right.svg';
 import { ReactComponent as ArrowCarousel } from '../../assets/icons/arrow-carousel.svg';
@@ -75,7 +75,8 @@ export const StyledArrowLeft = styled(ArrowLeft)`
         height: 84px;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
         & > rect,
         & > path {
             stroke: rgba(151, 210, 139, 1);
@@ -88,7 +89,8 @@ export const StyledArrowRight = styled(ArrowRight)`
         height: 84px;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
         & > rect,
         & > path {
             stroke: rgba(151, 210, 139, 1);
@@ -130,6 +132,7 @@ export const ButtonWrapper = styled.div`
     @media screen and (min-width: 1280px) {
         gap: 24px;
     }
+
 `;
 
 export const ItemNumber = styled.p`
@@ -168,11 +171,13 @@ export const Button = styled.button`
         width: 88px;
         height: 88px;
     }
+    
 `;
 
 export const StyledArrowCarousel = styled(ArrowCarousel)`
     cursor: pointer;
-    &:hover {
+    &:hover,
+    &:focus {
         & > rect {
         fill: var(--textColor);
         }

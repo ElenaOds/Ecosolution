@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState  } from "react";
 import BurgerMenu from '../BurgerMenu/BurgerMenu';
 import { Container, LogoWrapper, StyledLogo, StyledLogoHovered, StyledBurger, Wrapper, Styledlink, StyledArrow, StyledHeader, Button } from './Header.styled';
 
@@ -14,10 +14,8 @@ const Header = () => {
   }, []);
 
   const isSticky = () => {
-  
-    const header = document.getElementById("header");
-    
-    const sticky = header.offsetTop;
+      const header = document.getElementById("header");
+      const sticky = header.offsetTop;
   
     if (window.scrollY > sticky) {
       setSticky("sticky");
@@ -26,12 +24,38 @@ const Header = () => {
     }
   };
 
-  const toggleMenu = () => {
-    setOpen(!open);
+  const openMenu = () => {
+    setOpen(true);
   };
+
+  const closeMenu = () => {
+    setOpen(false);
+  
+  };
+
+  useEffect(() => {
+    if (open) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [open]);
 
 
 window.addEventListener("scroll", setSticky)
+
+useEffect(() => {
+  const handleEscape =(event) => {
+    if (event.code === "Escape") {
+      setOpen(false);
+    }
+  }
+  document.addEventListener('keydown', handleEscape);
+
+  return () => {
+    document.removeEventListener('keydown', handleEscape);
+  };
+}, []);
 
     return (
         <StyledHeader id="header" className={sticky}>
@@ -41,12 +65,12 @@ window.addEventListener("scroll", setSticky)
                 <StyledLogoHovered/>
             </LogoWrapper>
             <Wrapper>
-              <Button onClick={toggleMenu} aria-label="open burger menu"><StyledBurger /></Button>
+              <Button onClick={openMenu} type="button" aria-label="open burger menu"><StyledBurger /></Button>
                 <Styledlink href="#contact" aria-label="link to Contact us section">Get in touch
                     <StyledArrow />
                 </Styledlink>
             </Wrapper>
-            <BurgerMenu toggleMenu={toggleMenu} open={open}/>
+            <BurgerMenu closeMenu={closeMenu} open={open}/>
         </Container>
         </StyledHeader>
     )

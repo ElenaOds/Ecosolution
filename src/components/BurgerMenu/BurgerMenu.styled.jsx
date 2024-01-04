@@ -91,11 +91,13 @@ export const CloseButton = styled.button`
         margin-bottom: 6px;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
         color: var(--lightGreen);
     }
 
-    &:hover ${StyledCross} {
+    &:hover ${StyledCross},
+    &:focus ${StyledCross} {
         & > path {
             stroke: var(--lightGreen);
         }
@@ -127,19 +129,28 @@ export const BurgerText = styled.a`
     ${text}
     font-size: 24px;
     text-decoration: none; 
-`;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        color: var(--scrollBg);  
+    }
+`;      
 
 export const BurgerItem = styled.li`
     display: flex;
     align-items: center;
     cursor: pointer;
 
-    &:hover ${BurgerText} {
+
+    &:hover ${BurgerText},
+    &:focus ${BurgerText} {
         color: var(--scrollBg);  
     }
 
-    &:hover ${StyledBurgerArrow} {
-        & > path {
+    &:hover ${StyledBurgerArrow},
+    &:focus ${StyledBurgerArrow} {             
+        & > path {      
             stroke: var(--scrollBg);  
         }
     }
@@ -173,13 +184,20 @@ export const Social = styled.div`
 `;
 
 export const SocialLink = styled.a`
-    &:hover ${StyledFacebook} {
+    &:hover,
+    &:focus {
+        outline: none;
+    }
+
+    &:hover ${StyledFacebook},
+    &:focus ${StyledFacebook} {
         & > path {
             stroke: var(--lightGreen);  
         }
     }
 
-    &:hover ${StyledInstagram} {
+    &:hover ${StyledInstagram},
+    &:focus ${StyledInstagram}  {
         & > path {
             stroke: var(--lightGreen);  
         }

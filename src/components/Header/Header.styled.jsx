@@ -48,11 +48,18 @@ export const LogoWrapper = styled.a`
     text-decoration: none;
     cursor: pointer;
 
-    &:hover ${StyledLogo} {
+    &:hover,
+    &:focus {
+        outline: none;
+    }
+
+    &:hover ${StyledLogo},
+    &:focus ${StyledLogo} {
         display: none;
     }
 
-    &:hover ${StyledLogoHovered} {
+    &:hover ${StyledLogoHovered},
+    &:focus ${StyledLogoHovered} {
         display: block;
     }
 `;
@@ -62,8 +69,11 @@ export const StyledBurger = styled(Burger)`
     cursor: pointer;
     fill: var(--burgerBgColor);
 
-    &:hover {
-        fill: var(--lightGreen);
+    &:hover,
+    &:focus {
+        & > rect {
+            fill: var(--lightGreen);
+        }
     }
 `;
 
@@ -116,7 +126,8 @@ export const Styledlink = styled.a`
         }  
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
         background-color: var(--textColor);
         color: var(--lightGreen);
 
@@ -124,7 +135,8 @@ export const Styledlink = styled.a`
             background-color: var(--lightGreen); 
         }
 
-        &:hover ${StyledArrow} {
+        &:hover ${StyledArrow},
+        &:focus ${StyledArrow} {
             display: block;
         }
     }

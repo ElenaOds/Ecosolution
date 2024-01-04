@@ -1,6 +1,4 @@
 import styled from '@emotion/styled';
-import pic1 from '../../assets/images/about1.webp';
-import pic2 from '../../assets/images/about2.webp';
 
 import { ReactComponent as Icon1 } from '../../assets/icons/about1.svg';
 import { ReactComponent as Icon2 } from '../../assets/icons/about2.svg';
@@ -237,11 +235,7 @@ export const ListText = styled.p`
 
 export const Img = styled.img`
     display: none;
-    background-image: url(${pic1});
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+   
     @media screen and (min-width: 768px) {
         display: block;
         height: 197px;
@@ -253,21 +247,4 @@ export const Img = styled.img`
     }
 `;
 
-export const StyledImg = styled.img`
-    display: none;
-    background-image: url(${pic2});
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    @media screen and (min-width: 768px) {
-        display: block;
-        height: 197px;
-        width: 100%;
-    }
-
-    @media screen and (min-width: 1280px) {
-        height: 403px;
-    }
-`;
 

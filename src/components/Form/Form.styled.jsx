@@ -107,7 +107,8 @@ export const Button = styled.button`
     line-height: 1.125px;
     background-color: transparent;
     
-    &:hover {
+    &:hover,
+    &:focus {
         border: 1px solid var(--textColor);
         background-color: var(--textColor);
         color: var(--lightGreen);

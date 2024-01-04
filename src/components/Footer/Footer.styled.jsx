@@ -74,15 +74,19 @@ export const StyledLogoHovered = styled(LogoHovered)`
 
 export const LogoWrapper = styled.a`
     text-decoration: none;
-    cursor: pointer;
-   
     
+    &:hover,
+    &:focus {
+        outline: none;
+    }
 
-    &:hover ${StyledLogo} {
+    &:hover ${StyledLogo},
+    &:focus ${StyledLogo} {
         display: none;
     }
 
-    &:hover ${StyledLogoHovered} {
+    &:hover ${StyledLogoHovered},
+    &:focus ${StyledLogoHovered} {
         display: block;
     }
 
@@ -92,7 +96,26 @@ export const LogoWrapper = styled.a`
 `;
 
 export const StyledArrowTop = styled(ArrowTop)`
-    &:hover  {
+    width: 32px;
+    height: 32px;
+`;
+
+export const Link = styled.a`
+    cursor: pointer; 
+    display: inline-block;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &:hover,
+    &:focus  {
+       outline: none;
+    }
+
+    &:hover ${StyledArrowTop},
+    &:focus ${StyledArrowTop} {
         & > rect {
             fill: var(--textColor);
         }
@@ -101,15 +124,8 @@ export const StyledArrowTop = styled(ArrowTop)`
         stroke: var(--lightGreen);
         }
     }
-`;
 
-export const Link = styled.a`
-    cursor: pointer; 
 
-    @media screen and (min-width: 768px) {
-        display: flex;
-        justify-content: flex-end;
-    }
 `;
 
 export const LinksWrapper = styled.div`
@@ -118,6 +134,35 @@ export const LinksWrapper = styled.div`
     justify-content: space-between;
     align-items: center;
     margin-bottom: 24px;
+`;
+
+export const StyledFacebook = styled(Facebook)`
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+
+    // &:hover,
+    // &:focus  {   
+    //     outline: 1px solid #F00;
+    //      & > path {
+    //     stroke: var(--lightGreen);
+        
+    //     }
+    // }
+`;
+
+export const StyledInstagram = styled(Instagram)`
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+
+    // &:hover,
+    // &:focus  {
+    //      & > path {
+    //     outline: none;
+    //     stroke: var(--lightGreen);
+    //     }
+    // }
 `;
 
 export const Social = styled.div`
@@ -130,28 +175,28 @@ export const Social = styled.div`
     }
 `;
 
-export const StyledFacebook = styled(Facebook)`
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
+export const SocialLink = styled.a`
+    &:hover,
+    &:focus  {
+        outline: none;
+    }
 
-    &:hover  {
+    &:hover ${StyledInstagram},
+    &:focus ${StyledInstagram}  {
          & > path {
+        outline: none;
         stroke: var(--lightGreen);
         }
     }
-`;
 
-export const StyledInstagram = styled(Instagram)`
-    width: 24px;
-    height: 24px;
-    cursor: pointer;
-
-    &:hover  {
+    &:hover ${StyledFacebook},
+    &:focus ${StyledFacebook}  {
          & > path {
+        outline: none;
         stroke: var(--lightGreen);
         }
     }
+
 `;
 
 export const Text = styled.p`

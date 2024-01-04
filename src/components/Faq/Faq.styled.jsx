@@ -1,4 +1,5 @@
 import styled from "@emotion/styled/macro";
+import {keyframes} from "@emotion/react";
 import { ReactComponent as ArrowDown } from '../../assets/icons/arrow_down.svg';
 import { ReactComponent as Minus } from '../../assets/icons/minus.svg';
 import { ReactComponent as Plus } from '../../assets/icons/plus.svg';
@@ -88,7 +89,9 @@ export const Styledlink = styled.a`
         }  
 
 
-    &:hover {
+    &:hover,
+    &:focus {
+        outline: none;
         background-color: var(--textColor);
         color: var(--lightGreen);
 
@@ -96,7 +99,8 @@ export const Styledlink = styled.a`
             background-color: var(--lightGreen); 
         }
 
-        &:hover ${StyledArrow} {
+        &:hover ${StyledArrow},
+        &:focus ${StyledArrow} {
             display: block;
         }
     }
@@ -145,12 +149,23 @@ export const Question = styled.p`
     }
 `;
 
+const moveDown = keyframes`
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+`;
+
 export const Answer = styled.p`
     ${text}
     font-size: 14px;
     margin-top: 16px;
     margin-left: 20px;
-
+    animation: ${moveDown} 1s ease-in-out;
 
     @media screen and (min-width: 768px) {
         margin-left: 32px;
