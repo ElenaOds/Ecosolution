@@ -60,7 +60,7 @@ useEffect(() => {
     return (
         <StyledHeader id="header" className={sticky}>
         <Container >
-            <LogoWrapper href='/' aria-label="logo">
+            <LogoWrapper href='#main' aria-label="logo">
                 <StyledLogo/>
                 <StyledLogoHovered/>
             </LogoWrapper>
